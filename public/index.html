@@ -3,9 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+  <title>Yelpington</title>
 </head>
-<body>
+<body id="body">
+  <header id='header-container'>
+    <h1 id="header">Yelpington: Burlington, VT</h1>
+  </header>
+  <nav id="nav-bar">
+  </nav>
+  <div id="map-container">
+
+    <div id="map-left"> <!--Restaurant's List-->
+      <form id="left-form" method="POST" action="">
+        <label for="name">Restaurant:
+          <input name="name" type="text" id="name" />
+        </label>
+      </form>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="map-right">
+      <img id="map-right-img" src="https://unsplash.com/photos/uArnumExMcY"/>
+    </div>
+  </div>
+
+  <div id="bottom-container">
+
+  </div>
 
   <script src="main.js"></script>
 </body>

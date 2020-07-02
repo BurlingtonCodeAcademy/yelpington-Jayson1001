@@ -1,0 +1,46 @@
+#body {
+
+}
+
+#header-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#header {
+    text-align: center;
+}
+
+#nav-bar {
+
+}
+
+#map-container {
+    display: flex;
+    justify-content: center;
+}
+
+#map-left {
+    background-color: green;
+    width: 200px;
+}
+
+#map {
+    height: 500px;
+    width: 600px;
+}
+
+#map-right {
+    background-color: blue;
+    width: 200px;
+}
+
+#map-right-img {
+    width: 100px;
+    height: 100px;
+}
+
+#bottom-container {
+    
+}
