@@ -1,12 +1,15 @@
 const express = require('express')
-const fetch = require('fetch')
 const path = require('path')
 const port = process.env.PORT || 5050
 const app = express()
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.send(path.resolve('public/index.html'))
+    res.send(path.resolve('/public/index.html'))
+});
+
+app.get('/restaurant', (req, res) => {
+    res.sendFile(path.resolve('public/restaurant.html'))
 });
 
 

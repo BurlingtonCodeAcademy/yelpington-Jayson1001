@@ -1,19 +1,35 @@
-#body {
+/*-------------index.html----------------*/
 
+#body {
+    background-color: lightgreen;
 }
 
 #header-container {
     display: flex;
     justify-content: center;
-    
+    background-color: lightgreen;
+    margin-left: 242px;
+    margin-right: 242px;
 }
 
 #header {
     text-align: center;
 }
 
-#nav-bar {
+#map-left {
+    width: 300px;
+    background-color: lightgreen;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid green;
+    border-left: 3px solid green;
+    border-bottom: 3px solid green;
+}
 
+#restaurant {
+    font-size: 15px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #map-container {
@@ -21,26 +37,29 @@
     justify-content: center;
 }
 
-#map-left {
-    background-color: green;
-    width: 200px;
-}
-
 #map {
-    height: 500px;
+    height: 566px;
     width: 600px;
+    border: 3px solid green;
 }
 
 #map-right {
-    background-color: blue;
-    width: 200px;
+    width: 300px;
 }
 
 #map-right-img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
 }
 
-#bottom-container {
-    
+/*-------------restaurant.html----------------*/
+
+#rest-container {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: "Arial Black", Gadget, sans-serif;
 }
+
