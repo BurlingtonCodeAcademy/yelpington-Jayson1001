@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
+    <!---Importing CSS style sheet-->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!--Importing leaftlet CSS package for mapping-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="" />
+        <!--Importing leaflet JS package for mapping-->
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
@@ -15,6 +18,7 @@
 </head>
 
 <body id="body">
+    <!--All restaurant info displayed below-->
     <div id="rest-container">
         <div id="restaurant"></div>
         <div id="name"></div>
@@ -24,11 +28,12 @@
         <div id="hours"></div>
         <div id="notes"></div>
     </div>
-
     <div id="map-container">
+    <!--Map zoomed in on restaurant location-->
         <div id="map"></div>
     </div>
-    <script src="restaurants.js"></script>
+    <!--Importing JavaScript file from restaurants.js-->
+    <script src="scripts/restaurants.js"></script>
 </body>
 
 </html>

@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css" />
+  <!---Importing CSS style sheet-->
+  <link rel="stylesheet" href="styles/styles.css" />
+  <!--Importing leaftlet CSS package for mapping-->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin="" />
+    <!--Importing leaflet JS package for mapping-->
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
@@ -15,24 +18,26 @@
 </head>
 
 <body id="body">
+  <!--Header / Home Page Title-->
   <header id='header-container'>
     <h1 id="header">Yelpington: Burlington, VT</h1>
   </header>
+  <!--Navigation bar with list of all restaurants-->
   <nav id="nav-bar">
   </nav>
   <div id="map-container">
-
+  <!--Map displayed on page-->
     <div id="map-left">
       <div id="restaurant"><h3>Local Restaurants</h3></div>
     </div>
-
     <div id="map"></div>
-
+  <!--Section to left of map with generic restaurant image-->
     <div id="map-right">
       <img id="map-right-img" src="./images/restaurant-pic.jpg" />
     </div>
   </div>
-  <script src="main.js"></script>
+  <!--Importing JavaScript file from main.js-->
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
